@@ -1,0 +1,28 @@
+/* Forside CSS */
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+main {
+  background-color: var(--primary-light);
+}
+
+/* det her er kun for tests skyld, idet header og footer css skal under generel */
+
+header {
+  background-color: var(--secondary-light);
+}
+
+footer {
+  background-color: var(--tertiary);
+}
+/* det her er kun for tests skyld, idet header og footer css skal under generel */

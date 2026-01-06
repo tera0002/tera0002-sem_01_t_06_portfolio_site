@@ -1,0 +1,61 @@
+/* custom CSS */
+
+:root {
+  /* Farver start */
+
+  --primary: #a2cbd8;
+  --primary-light: #b9d8e4;
+  --secondary: #122e71;
+  --secondary-light: #05407e;
+
+  --tertiary: #4b1c31;
+  --tertiary-light: #4b1c3183;
+  /* tjek om 50% opacitet på tertiary-light er ok */
+
+  --contrast-light: #e3f8c987;
+  /* tjek om 50% opacitet på tertiary-light er ok */
+  --contrast: #e3f8c9;
+  --contrast-dark: #d3da92;
+
+  --text-color: #4b1c31;
+  /* Farver slut */
+
+  /* Fonte start */
+  --font-family-istok: "Istok Web", sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+
+  --font-family-instrument: "Instrument Sans", sans-serif;
+  /* --font-weight-regular: 400; nødvendig? bruges ikke*/
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-style: normal;
+
+  /* H1 */
+  /* Tilpas størrelser når jeg har sitet oprettet ift. notat */
+  /* mobil: s.40 i figma */
+  /* desk: s.60 i figma */
+  --h1-size: 2.5rem;
+  --h1-size-desk: 4rem;
+
+  /* H2 */
+  /* mobil: s.20 i figma */
+  /* desk: s.30 i figma */
+  --h2-size: 1.5rem;
+  --h2-size-desk: 3rem;
+
+  /* H3 */
+  /* mobil: s.16 i figma */
+  /* desk: s.24 i figma */
+  --h3-size: 1.2rem;
+  --h3-size-desk: 2rem;
+
+  /* P */
+  /* mobil: s.14 i figma */
+  /* desk: s.14?? i figma */
+  --text-size: 1rem;
+  --text-size-desk: 1.4rem;
+  --text-line-height: 2rem;
+}
+
+/* Fonte slut */

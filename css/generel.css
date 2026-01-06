@@ -1,0 +1,129 @@
+/* Generel CSS */
+
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/*************************************************/
+
+html {
+  font-family: var(--font-family-istok);
+  color: var(--text-color);
+}
+
+main {
+  margin: 0 auto;
+  max-width: 1300px;
+}
+
+h1 {
+  /* font-family: var(--font-family-istok); fremgår allerede under html*/
+  font-weight: var(--font-weight-regular);
+  font-size: var(--h1-size);
+}
+
+h2 {
+  font-family: var(--font-family-instrument);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--h2-size);
+}
+
+h3 {
+  font-family: var(--font-family-instrument);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--h3-size);
+}
+
+p,
+a {
+  /* font-family: var(--font-family-istok); */
+  font-weight: var(--font-weight-regular);
+  font-size: var(--text-size);
+  line-height: var(--text-line-height);
+  text-wrap: pretty;
+  text-decoration: none;
+}
+
+a {
+  font-weight: var(--font-weight-bold);
+}
+
+/* Tilføj .knap-roed og knap blaa*/
+/* Tilføj .knap-roed:hover og .knap-blaa:hover:*/
+
+/* Tilføj .krumme*
+display:none; på tele 
+farve slår vel igennem fra HTML samt font-size?/
+
+/* Tilføj .krumme a
+font-size: var(--text-size) farve slår vel igennem fra HTML samt font-size?*/
+
+/* Tilføj .krumme a:hover
+text-decoration: underline;*/
+/* Tilføj .krumme-pil*/
+
+/* Tilføj .active-menu
+text-decoration: underline;*/
+
+/* husk nav display: block mm på mobil*/
+
+/********************* Header start ****************************/
+
+/************************** Header slut ***********************/
+
+/********************* Burger start ****************************/
+/************************** Header slut ***********************/
+
+/********************* Burger start ****************************/
+/************************** Header slut ***********************/
+
+/* Desk responsiv her */
+@media (min-width: 800px) {
+  h1 {
+    font-size: var(--h1-size-desk);
+  }
+
+  h2 {
+    font-size: var(--h2-size-desk);
+  }
+
+  h3 {
+    font-size: var(--h3-size-desk);
+  }
+
+  p,
+  a {
+    font-size: var(--text-size-desk);
+  }
+}
+
+/* Tilføj .krumme* 
+farve slår vel igennem fra HTML samt font-size?/
+
+/* Tilføj .krumme a
+font-size: var(--text-size-desk) farve slår vel igennem fra HTML samt font-size?*/
+
+/* Tilføj .krumme a:hover
+text-decoration: underline;*/
+/* Tilføj .krumme-pil*/
+
+/* Tilføj .active-menu
+text-decoration: underline;*/
+
+/* Tilføj burger
+display: none; og eller block */
+
+/* Tilføj .knap-roed og knap blaa 
+  font-size: var(--text-size-desk);*/
+/* Tilføj .knap-roed:hover og .knap-blaa:hover:*/
+
+/**************************  ***********************/
