@@ -11,18 +11,3 @@ img {
   height: auto;
   display: block;
 }
-
-main {
-  background-color: var(--primary-light);
-}
-
-/* det her er kun for tests skyld, idet header og footer css skal under generel */
-
-header {
-  background-color: var(--secondary-light);
-}
-
-footer {
-  background-color: var(--tertiary);
-}
-/* det her er kun for tests skyld, idet header og footer css skal under generel */
