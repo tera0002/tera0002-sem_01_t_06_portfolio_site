@@ -1,9 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Te Rahbæk</title>
+    <meta name="robots" content="noindex" />
+    <title>Om mig</title>
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="css/generel.css" />
+    <link rel="stylesheet" href="css/ommig.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- favicon? -->
   </head>
-  <body></body>
+
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html">
+          <img class="svg" src="img/logo.svg" alt="Logo" />
+        </a>
+      </div>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Forside</a></li>
+          <li><a href="temaopgaver.html">Temaopgaver</a></li>
+          <li><a class="subnav" href="tema_to.html">Tema 2</a></li>
+          <li><a class="subnav" href="tema_tre.html">Tema 3</a></li>
+          <li><a class="subnav" href="tema_fire.html">Tema 4</a></li>
+          <li><a class="subnav" href="tema_fem.html">Tema 5</a></li>
+          <li><a href="om_mig.html">Om mig</a></li>
+        </ul>
+
+        <button class="burger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <div class="krumme">
+        <a href="index.html">Forside</a>
+        <span class="krumme-pil">></span>
+        <a href="om_mig.html">Om mig</a>
+      </div>
+
+      <h1>Te Rahbæk</h1>
+      <section class="grid_1-2">
+        <div>
+          <h2>1. semester på MMD</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+            perspiciatis consectetur adipisci enim. Labore quam, voluptatum,
+            quis placeat excepturi officia dolorem fuga deserunt, est delectus
+            dignissimos impedit explicabo et odit.
+          </p>
+
+          <p>
+            For de eventyrlystne eller nysgerrige, kan i se nærmere på mine
+            projekter ved at klikke på knappen nedenfor :o)
+          </p>
+          <a class="roed-knap" href="temaopgaver.html">Tag på opdagelse her!</a>
+        </div>
+        <div class="order">
+          <img
+            id="portraet"
+            src="img/portraet copy.webp"
+            alt="portraetbillede"
+          />
+        </div>
+      </section>
+      <section class="grid_1-1">
+        <div>
+          <h3>Erfaring og læring</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+            perspiciatis consectetur adipisci enim. Labore quam, voluptatum,
+            quis placeat excepturi officia dolorem fuga deserunt, est delectus
+            dignissimos impedit explicabo et odit.
+          </p>
+        </div>
+        <div>
+          <h3>Læringsmål</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+            perspiciatis consectetur adipisci enim. Labore quam, voluptatum,
+            quis placeat excepturi officia dolorem fuga deserunt, est delectus
+            dignissimos impedit explicabo et odit.
+          </p>
+        </div>
+      </section>
+
+      <h2>CV</h2>
+
+      <div>
+        <p>
+          Nedenfor er et kort overblik over, hvilke milepæle, <br />jeg har
+          opnået i løbet af mit uddannelse- og erhvervsliv.
+        </p>
+      </div>
+      <section class="grid_col2-1">
+        <div>
+          <h3>Uddannelseserfaring</h3>
+          <ul class="uddannelse">
+            <li>
+              Kontoruddannelse, Offentlig Administration, Tietgen 2019 - 2021
+            </li>
+            <li>
+              Tietgen Handelsgymnasium, Tietgen Handelsgymnasium 2014 - 2017
+            </li>
+            <li>10. Klasse, Vejstrup Efterskole 2013 - 2014</li>
+            <li>9. klasses afgangseksamen, Odense Friskole 2013</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Erhvervserfaring</h3>
+          <ul class="erhverv">
+            <li>Kontorfuldmægtig, Østre Landsret 2021 - 2023</li>
+            <li>Kontorelev, Retten i Odense 2019 - 2021</li>
+            <li>Inkassokonsulent, Danske Inkasso 2018</li>
+            <li>Værnepligtig, Beredskabsstyrelsen 2017 - 2018</li>
+            <li>Interviewer, Analyseinstituttet Norstat 2015 - 2017</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <h3>dette er en footer test</h3>
+    </footer>
+    <script src="js/main.js"></script>
+    <!-- <script src="index.js"></script> -->
+    <!-- husk at opdatere link til lokalt js for hvert site -->
+  </body>
 </html>

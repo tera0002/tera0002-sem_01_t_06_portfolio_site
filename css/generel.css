@@ -22,25 +22,31 @@ html {
 
 main {
   margin: 0 auto;
-  max-width: 1300px;
+  max-width: 1200px;
+  background-color: var(--primary-light);
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 h1 {
   /* font-family: var(--font-family-istok); fremgår allerede under html*/
   font-weight: var(--font-weight-regular);
   font-size: var(--h1-size);
+  padding-top: 10px;
 }
 
 h2 {
   font-family: var(--font-family-instrument);
   font-weight: var(--font-weight-semibold);
   font-size: var(--h2-size);
+  padding-bottom: 10px;
 }
 
 h3 {
   font-family: var(--font-family-instrument);
   font-weight: var(--font-weight-medium);
   font-size: var(--h3-size);
+  padding-bottom: 5px;
 }
 
 p,
@@ -53,9 +59,55 @@ a {
   text-decoration: none;
 }
 
-a {
-  font-weight: var(--font-weight-bold);
+p {
+  max-width: 34em;
 }
+
+li {
+  margin: 10px;
+}
+
+.roed-knap {
+  display: inline-block;
+  max-width: 300px;
+  font-size: var(--text-size);
+  font-weight: var(--font-weight-semibold);
+  color: var(--contrast-light);
+  background-color: var(--tertiary);
+  padding: 10px 20px;
+  margin-top: 25px;
+  border: 2px solid var(--tertiary);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.roed-knap:hover {
+  background-color: var(--contrast);
+  color: var(--text-color);
+  border: 2px solid var(--tertiary);
+}
+
+/* 
+.blaa-knap {
+  font-size: var(--text-size);
+  font-weight: var(--font-weight-semibold);
+  color: var(--contrast-light);
+  background-color: var(--secondary);
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid var(--secondary);
+  border-radius: 4px;
+  cursor: pointer;
+}
+.blaa-knap:hover {
+  background-color: var(--contrast);
+  color: var(--text-color);
+  border: 2px solid var(--secondary);
+}
+.blaa-knap:active {
+  background-color: var(--secondary-light);
+  color: var(--contrast-light);
+} */
 
 /* Tilføj .knap-roed og knap blaa*/
 /* Tilføj .knap-roed:hover og .knap-blaa:hover:*/
@@ -71,20 +123,163 @@ font-size: var(--text-size) farve slår vel igennem fra HTML samt font-size?*/
 text-decoration: underline;*/
 /* Tilføj .krumme-pil*/
 
-/* Tilføj .active-menu
+/* Tilføj - skal den ikke placeres kun under desk???? måske ikke idk .active-menu
 text-decoration: underline;*/
 
-/* husk nav display: block mm på mobil*/
+/* 
 
-/********************* Header start ****************************/
 
-/************************** Header slut ***********************/
+.btn-dark {
+  color: var(--tertiary);
+  font-size: var(--text-size);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: 0.2rem;
+  background-color: var(--primary);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 20px;
+  text-align: center;
+  display: inline-block;
+  width: 18rem;
+}
 
-/********************* Burger start ****************************/
-/************************** Header slut ***********************/
+.btn-dark:hover {
+  background-color: var(--secondary);
+  color: var(--text-color);
+}
 
-/********************* Burger start ****************************/
-/************************** Header slut ***********************/
+.krumme a {
+  font-size: var(--text-size);
+  color: var(--text-color);
+}
+
+.krumme a:hover {
+  text-decoration: underline;
+}
+
+.krumme-pil {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  color: var(--text-color);
+}
+
+.active-menu {
+  text-decoration: underline;
+} */
+
+/********************* menu/burger start ****************************/
+
+.menu {
+  display: none;
+}
+.burger {
+  display: block;
+  background-color: transparent;
+  border: 0;
+}
+.burger.active .line:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+  transition: 0.2s linear;
+}
+
+.burger.active .line:nth-child(2) {
+  opacity: 0;
+  transition: 0.15s linear;
+}
+
+.burger.active .line:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+  transition: 0.2s linear;
+}
+
+nav.active .menu {
+  display: block;
+  position: absolute;
+  background-color: var(--secondary-light);
+  top: 120px;
+  right: 0;
+  width: 50%;
+  justify-content: end;
+  border-radius: 4px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+nav.active .menu li {
+  margin: 10px 20px;
+  list-style: none;
+}
+
+nav.active .menu a {
+  font-size: var(--h2-size);
+  color: var(--contrast-light);
+}
+
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--secondary-light);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  width: 200px;
+  height: 100px;
+}
+
+.menu li {
+  margin-right: 20px;
+  /* text-decoration: underline var(--tertiary-light); */
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+.menu a {
+  display: block;
+  padding: 10px;
+  color: var(--contrast-light);
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: end;
+  border: 2px solid var(--secondary-light);
+  border-radius: 4px;
+}
+/* tilret evt hvis tid rip */
+.menu a:hover {
+  background-color: var(--secondary-light);
+  color: var(--contrast-dark);
+  border: 2px solid var(--secondary);
+  border-radius: 4px;
+}
+
+.menu a.subnav {
+  font-size: var(--h3-size);
+}
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger .line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--contrast-light);
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+
+footer {
+  background-color: var(--tertiary);
+}
+/********************* slut mobil ****************************/
 
 /* Desk responsiv her */
 @media (min-width: 800px) {
@@ -104,6 +299,34 @@ text-decoration: underline;*/
   a {
     font-size: var(--text-size-desk);
   }
+  /********************* menu/burger start desk ****************************/
+
+  .burger {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 2px solid var(--secondary-light);
+  }
+
+  .menu a {
+    border: 2px solid var(--secondary-light);
+    border-radius: 4px;
+  }
+  .menu li {
+    text-decoration: none;
+  }
+
+  /********************* menu/burger slut desk ****************************/
 }
 
 /* Tilføj .krumme* 
@@ -115,9 +338,6 @@ font-size: var(--text-size-desk) farve slår vel igennem fra HTML samt font-size
 /* Tilføj .krumme a:hover
 text-decoration: underline;*/
 /* Tilføj .krumme-pil*/
-
-/* Tilføj .active-menu
-text-decoration: underline;*/
 
 /* Tilføj burger
 display: none; og eller block */

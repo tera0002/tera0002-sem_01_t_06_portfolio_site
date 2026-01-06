@@ -11,3 +11,92 @@ img {
   height: auto;
   display: block;
 }
+
+#portraet {
+  width: 100%;
+  border-radius: 4px;
+  margin: 0 auto;
+  display: block;
+}
+
+.order {
+  order: -1;
+}
+
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  align-items: start;
+  justify-items: center;
+  padding: 20px;
+}
+
+.grid_1-2 {
+  display: grid;
+  gap: 20px;
+  align-items: center;
+  justify-items: center;
+  padding: 20px;
+}
+
+.grid_col2-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 20px;
+  justify-items: center;
+  padding: 20px;
+}
+.uddannelse li,
+.erhverv li {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+@media (min-width: 600px) {
+  .grid_col2-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    justify-items: center;
+    padding: 20px;
+  }
+}
+
+@media (min-width: 800px) {
+  main {
+    padding-left: 125px;
+    padding-right: 100px;
+  }
+
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+    justify-items: center;
+    text-align: left;
+    padding: 20px;
+  }
+
+  .grid_1-2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    align-items: center;
+    justify-items: center;
+    text-align: left;
+    padding: 20px;
+  }
+
+  .grid_col2-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    justify-items: center;
+    padding: 20px;
+  }
+}
