@@ -16,7 +16,6 @@ img {
   width: 100%;
   border-radius: 4px;
   margin: 0 auto;
-  display: block;
 }
 
 .order {
@@ -28,14 +27,6 @@ img {
   grid-template-columns: 1fr;
   gap: 20px;
   align-items: start;
-  justify-items: center;
-  padding: 20px;
-}
-
-.grid_1-2 {
-  display: grid;
-  gap: 20px;
-  align-items: center;
   justify-items: center;
   padding: 20px;
 }
@@ -71,24 +62,25 @@ img {
     padding-right: 100px;
   }
 
+  .order {
+    order: 0;
+  }
   .grid_1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-    align-items: center;
+    align-items: start;
     justify-items: center;
+    justify-content: end;
     text-align: left;
     padding: 20px;
   }
 
-  .grid_1-2 {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 20px;
-    align-items: center;
-    justify-items: center;
-    text-align: left;
-    padding: 20px;
+  a.roed-knap {
+    display: flex;
+    float: right;
+    justify-content: center;
+    align-items: end;
   }
 
   .grid_col2-1 {

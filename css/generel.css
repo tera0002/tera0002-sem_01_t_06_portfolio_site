@@ -67,6 +67,25 @@ li {
   margin: 10px;
 }
 
+.krumme a {
+  font-size: var(--text-size);
+  color: var(--text-color);
+}
+
+.krumme a:hover {
+  text-decoration: underline;
+}
+
+.krumme-pil {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  color: var(--text-color);
+}
+
+.active-menu {
+  text-decoration: underline;
+}
+
 .roed-knap {
   display: inline-block;
   max-width: 300px;
@@ -79,10 +98,30 @@ li {
   border: 2px solid var(--tertiary);
   border-radius: 4px;
   cursor: pointer;
+  transition: background-color 0.2s ease;
 }
 
 .roed-knap:hover {
-  background-color: var(--contrast);
+  background-color: transparent;
+  color: var(--text-color);
+  border: 2px solid var(--tertiary);
+}
+
+.laes-is-more {
+  display: grid;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: var(--tertiary);
+  color: var(--contrast-light);
+  text-decoration: none;
+  text-align: center;
+  border-radius: 4px;
+  transition: var(--primary-light) 0.2s ease;
+  border: 2px solid var(--tertiary);
+}
+
+.laes-is-more:hover {
+  background-color: var(--primary-light);
   color: var(--text-color);
   border: 2px solid var(--tertiary);
 }
@@ -104,68 +143,8 @@ li {
   color: var(--text-color);
   border: 2px solid var(--secondary);
 }
-.blaa-knap:active {
-  background-color: var(--secondary-light);
-  color: var(--contrast-light);
-} */
-
-/* Tilføj .knap-roed og knap blaa*/
-/* Tilføj .knap-roed:hover og .knap-blaa:hover:*/
-
-/* Tilføj .krumme*
-display:none; på tele 
-farve slår vel igennem fra HTML samt font-size?/
-
-/* Tilføj .krumme a
-font-size: var(--text-size) farve slår vel igennem fra HTML samt font-size?*/
-
-/* Tilføj .krumme a:hover
-text-decoration: underline;*/
-/* Tilføj .krumme-pil*/
-
-/* Tilføj - skal den ikke placeres kun under desk???? måske ikke idk .active-menu
-text-decoration: underline;*/
 
 /* 
-
-
-.btn-dark {
-  color: var(--tertiary);
-  font-size: var(--text-size);
-  font-weight: var(--font-weight-medium);
-  letter-spacing: 0.2rem;
-  background-color: var(--primary);
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  border-radius: 20px;
-  text-align: center;
-  display: inline-block;
-  width: 18rem;
-}
-
-.btn-dark:hover {
-  background-color: var(--secondary);
-  color: var(--text-color);
-}
-
-.krumme a {
-  font-size: var(--text-size);
-  color: var(--text-color);
-}
-
-.krumme a:hover {
-  text-decoration: underline;
-}
-
-.krumme-pil {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-  color: var(--text-color);
-}
-
-.active-menu {
-  text-decoration: underline;
-} */
 
 /********************* menu/burger start ****************************/
 
@@ -213,6 +192,10 @@ nav.active .menu li {
 nav.active .menu a {
   font-size: var(--h2-size);
   color: var(--contrast-light);
+}
+
+nav.active .menu a.subnav {
+  font-size: var(--h3-size);
 }
 
 header {
@@ -275,9 +258,28 @@ header {
   margin-bottom: 5px;
   transition: 0.2s linear;
 }
+/* footer og forside ikoner */
+#logo-footer {
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+  display: block;
+  padding: 20px;
+  justify-self: center;
+  border-radius: 4px;
+}
 
 footer {
   background-color: var(--tertiary);
+  line-height: 1.6;
+  color: var(--contrast-light);
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-shadow: 0 -2px rgba(0, 0, 0, 0.1);
+  /*
+  
+} */
 }
 /********************* slut mobil ****************************/
 
@@ -321,6 +323,12 @@ footer {
   .menu a {
     border: 2px solid var(--secondary-light);
     border-radius: 4px;
+    font-size: var(--h3-size);
+  }
+
+  .menu a.subnav {
+    font-size: var(--text-size);
+    border-bottom: 6px solid var(--tertiary);
   }
   .menu li {
     text-decoration: none;
@@ -328,22 +336,5 @@ footer {
 
   /********************* menu/burger slut desk ****************************/
 }
-
-/* Tilføj .krumme* 
-farve slår vel igennem fra HTML samt font-size?/
-
-/* Tilføj .krumme a
-font-size: var(--text-size-desk) farve slår vel igennem fra HTML samt font-size?*/
-
-/* Tilføj .krumme a:hover
-text-decoration: underline;*/
-/* Tilføj .krumme-pil*/
-
-/* Tilføj burger
-display: none; og eller block */
-
-/* Tilføj .knap-roed og knap blaa 
-  font-size: var(--text-size-desk);*/
-/* Tilføj .knap-roed:hover og .knap-blaa:hover:*/
 
 /**************************  ***********************/
