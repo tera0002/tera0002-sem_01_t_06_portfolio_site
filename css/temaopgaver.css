@@ -19,8 +19,14 @@ img {
   gap: 20px;
 }
 .tema-box {
-  display: inline-block;
-  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+  border: 2px solid var(--secondary);
+  border-radius: 4px;
+  text-align: left;
+  align-items: center;
 }
 
 @media (width>= 800px) {
