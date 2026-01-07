@@ -12,3 +12,30 @@ img {
 }
 
 /*************************************************/
+
+.grid_2col_1-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+.tema-box {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+@media (width>= 800px) {
+  .grid_2col_1-1 {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .tema-box {
+    display: inline-block;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+  }
+  .tema-box :last-child {
+    margin-top: auto;
+  }
+}
